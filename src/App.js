@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 
 const technologies = [ 'TypeScript','JavaScript','Python','Node.js','Flask','FastAPI','Next.js','ReactJS','SQL' ];
@@ -273,7 +273,9 @@ function WorkPage(){
     el.scrollTo({ left: index * slideWidth, behavior:'smooth'});
   },[index]);
 
-  const go = (dir)=> setIndex(i=> Math.min(maxIndex, Math.max(0, i+dir)));
+  const go = useCallback((dir)=> {
+    setIndex(i=> Math.min(maxIndex, Math.max(0, i+dir)));
+  },[maxIndex]);
 
   // keyboard arrow navigation
   useEffect(()=>{
