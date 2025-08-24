@@ -221,7 +221,9 @@ html { scroll-behavior:smooth; }
 .work-page-wrapper { min-height:100vh; height:100vh; background:#ffffff; display:flex; flex-direction:column; }
 .work-page-wrapper.expanded { height:auto; min-height:100vh; }
 .work-nav { padding:1.35rem 3.2rem .85rem; }
-.work-content { flex:1; max-width:1220px; margin:0 auto; padding:1.1rem 3rem 1.8rem; display:flex; flex-direction:column; gap:1.25rem; min-height:0; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }
+.work-content { flex:1; max-width:1380px; margin:0 auto; padding:1.1rem 3rem 1.8rem; display:flex; flex-direction:column; gap:1.25rem; min-height:0; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }
+@media (min-width:1400px){ .work-content { max-width:1500px; padding-left:2.6rem; padding-right:2.6rem; } }
+@media (min-width:1600px){ .work-content { max-width:1680px; padding-left:2.8rem; padding-right:2.8rem; } }
 .work-title { font-size:clamp(2.8rem,5.8vw,4.4rem); margin:0 0 .55rem; line-height:1.02; font-weight:700; letter-spacing:.5px; }
 .work-lead { font-size:.84rem; line-height:1.42; max-width:620px; color:#40606d; margin:0; }
 .work-lead a { color:#2d505d; font-weight:600; position:relative; text-decoration:none; }
@@ -313,3 +315,32 @@ html { scroll-behavior:smooth; }
 .exp-inline-period span { background:linear-gradient(90deg,#6a52ff,#ff55c4); -webkit-background-clip:text; background-clip:text; color:transparent; }
 .exp-inline-role { font-size:.7rem; font-weight:500; color:#3a5d69; letter-spacing:.35px; }
 @media (max-width:720px){ .experience-inline { margin:1.1rem 0 0; } }
+
+/* =============================
+	Typography Slight Size Bump
+	(Accessibility / readability)
+	============================= */
+body { font-size:16.5px; }
+/* Hero & navigation */
+.eyebrow { font-size:clamp(.60rem,1.15vw,.72rem); }
+.subhead { font-size:clamp(.98rem,2.5vw,1.22rem); }
+.mini-link { font-size:.82rem; }
+/* Tech pills & small pills */
+.tech-pill { font-size:clamp(.6rem,1.5vw,.7rem); }
+.stack-pill { font-size:.60rem; }
+.proj-link { font-size:.6rem; }
+/* Work page text */
+.work-lead { font-size:.90rem; }
+.project-name { font-size:1.18rem; }
+.project-summary { font-size:.72rem; }
+.project-highlights { font-size:.74rem; }
+.project-period { font-size:.66rem; }
+/* About page */
+.about-lead { font-size:.90rem; }
+.exp-inline-company { font-size:.84rem; }
+.exp-inline-role { font-size:.74rem; }
+.edu-degree-row { font-size:.74rem; }
+.module-name { font-size:.72rem; }
+.module-grade { font-size:.74rem; }
+.a-level-subject-small { font-size:.74rem; }
+.a-level-row strong.a-level-grade-strong { font-size:.74rem; }
