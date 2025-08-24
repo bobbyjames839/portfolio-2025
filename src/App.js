@@ -18,8 +18,7 @@ const uniNotables = [
   { module:'Dissertation: Deep Learning in NMR', grade:'80%' }
 ];
 
-// Removed interests chips per user request
-const interests = [];
+// Interests removed earlier; variable deleted to avoid unused var warning
 
 const experiences = [
   {
@@ -284,7 +283,7 @@ function WorkPage(){
     };
     window.addEventListener('keydown',handler);
     return ()=>window.removeEventListener('keydown',handler);
-  },[maxIndex]);
+  },[go]);
 
   return (
     <div className={`work-page-wrapper ${ready ? 'is-ready': ''}`}>
