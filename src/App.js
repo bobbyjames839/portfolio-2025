@@ -55,12 +55,11 @@ const projects = [
     name: 'Bobee',
     period: 'Jun 2025',
   summary: 'AI journalling & reflection app.',
-    stack: ['React Native','Node.js','Firebase','OpenAI', 'Stripe', 'Render'],
+    stack: ['React Native','Node.js','Firebase','OpenAI', 'Render'],
     highlights: [
       'Voice note → transcript + insight pipeline',
       'Mood & productivity trend charts',
-      'Personalised chatbot using stored profile context',
-      'Subscription billing (Stripe)'
+      'Personalised chatbot using stored profile context'
     ],
     links: {
       demo: 'https://www.youtube.com/watch?v=fFQEB0aCTBg' // TODO: replace with real demo video link
