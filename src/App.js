@@ -15,7 +15,7 @@ const aLevels = [
 // Notable university results (UCL BSc Biochemistry – First Class)
 const uniNotables = [
   { module:'Python for Bioscience Research (Final Exam)', grade:'96%' },
-  { module:'Dissertation: Deep Learning in NMR', grade:'80%' }
+  { module:'Dissertation: Deep Learning in NMR', grade:'82%' }
 ];
 
 // Interests removed earlier; variable deleted to avoid unused var warning
